@@ -1,7 +1,6 @@
 package fr.univ_amu.iut.exo1;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 /**
  * Created by d16013755 on 06/10/17.
@@ -32,12 +31,16 @@ public class Employe {
                 '}';
     }
 
-    public double CalculSalaireBrut(){
+    public double CalculerSalaireBrut(){
         return base * nbHeures;
     }
 
-    public double CalculSalaireNet(){
-        return (CalculSalaireBrut()*0,8);
+    public double CalculerSalaireNet(){
+        return (CalculerSalaireBrut()*0.8);
+    }
+
+    public void setDateEmbauche(){
+        this.dateEmbauche = dateEmbauche;
     }
 }
 
